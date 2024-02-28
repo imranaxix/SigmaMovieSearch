@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SigmaMovie/static/css/main.924d6188.css",
+    "main.js": "/SigmaMovie/static/js/main.102d0f03.js",
+    "static/js/453.5558d6fa.chunk.js": "/SigmaMovie/static/js/453.5558d6fa.chunk.js",
+    "index.html": "/SigmaMovie/index.html",
+    "main.924d6188.css.map": "/SigmaMovie/static/css/main.924d6188.css.map",
+    "main.102d0f03.js.map": "/SigmaMovie/static/js/main.102d0f03.js.map",
+    "453.5558d6fa.chunk.js.map": "/SigmaMovie/static/js/453.5558d6fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.924d6188.css",
+    "static/js/main.102d0f03.js"
+  ]
+}
