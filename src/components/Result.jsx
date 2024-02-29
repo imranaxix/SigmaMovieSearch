@@ -1,3 +1,4 @@
+// Result.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Tag from '../assets/tag.png';
@@ -47,6 +48,10 @@ const Box = (props) => {
   };
 
   const getGenres = () => {
+    if (!props.genre_ids) {
+      return 'Unknown Genre';
+    }
+
     const movieGenres = props.genre_ids.map((genreId) => {
       const genre = genres.find((g) => g.id === genreId);
       return genre ? genre.name : 'Unknown Genre';
@@ -82,7 +87,11 @@ const Box = (props) => {
         </div>
       </div>
       <div className='shadow min-h-[400px] max-h-[550px] bg-[#0b0b0d] border border-black'>
-        <img src={IMGPATH + props.image} className='w-full select-none ' alt={props.title} />
+        <img
+          src={IMGPATH + props.image}
+          className='w-full select-none'
+          alt={props.title}
+        />
 
         <div
           className={` opacity-0 transition-opacity duration-300 ease-in-out min-h-[400px] h-[100%] w-full max-h-full absolute font-bold mt-4 flex justify-start flex-col px-4 items-center left-0 bg-white ${
@@ -94,14 +103,33 @@ const Box = (props) => {
             <span className='text-xl text-black font-bold mr-8 protest-guerrilla-regular'>
               {props.title}
             </span>
-            <span className='text-xl text-yellow-500 font-bold'>{props.rating}</span>
+            <span className='text-xl text-yellow-500 font-bold'>
+              {props.rating}
+            </span>
           </div>
           <div className='flex justify-start flex-col text-red-700 text-xs'>
             <h3 className='font-bold text-lg'>Overview:</h3>
-            <p className='italic font-semibold text-xs text-black mb-2'>{props.overview}</p>
-            <p>Released Date: <span className='font-semibold text-xs text-black'>{props.released}</span> </p>
-            <p>Language: <span className='font-semibold text-xs text-black'>{props.language}</span> </p>
-            <p>Genres: <span className='font-semibold text-xs italic text-black'>{getGenres()}</span></p>
+            <p className='italic font-semibold text-xs text-black mb-2'>
+              {props.overview}
+            </p>
+            <p>
+              Released Date:{' '}
+              <span className='font-semibold text-xs text-black'>
+                {props.released}
+              </span>{' '}
+            </p>
+            <p>
+              Language:{' '}
+              <span className='font-semibold text-xs text-black'>
+                {props.language}
+              </span>{' '}
+            </p>
+            <p>
+              Genres:{' '}
+              <span className='font-semibold text-xs italic text-black'>
+                {getGenres()}
+              </span>
+            </p>
           </div>
         </div>
       </div>
