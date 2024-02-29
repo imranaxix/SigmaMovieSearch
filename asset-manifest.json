@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SigmaMovieSearch/static/css/main.924d6188.css",
-    "main.js": "/SigmaMovieSearch/static/js/main.7a5fcf8b.js",
+    "main.js": "/SigmaMovieSearch/static/js/main.abcbc53d.js",
     "static/js/453.5558d6fa.chunk.js": "/SigmaMovieSearch/static/js/453.5558d6fa.chunk.js",
     "index.html": "/SigmaMovieSearch/index.html",
     "main.924d6188.css.map": "/SigmaMovieSearch/static/css/main.924d6188.css.map",
-    "main.7a5fcf8b.js.map": "/SigmaMovieSearch/static/js/main.7a5fcf8b.js.map",
+    "main.abcbc53d.js.map": "/SigmaMovieSearch/static/js/main.abcbc53d.js.map",
     "453.5558d6fa.chunk.js.map": "/SigmaMovieSearch/static/js/453.5558d6fa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.924d6188.css",
-    "static/js/main.7a5fcf8b.js"
+    "static/js/main.abcbc53d.js"
   ]
 }
